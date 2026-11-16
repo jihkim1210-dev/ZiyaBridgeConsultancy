@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ziya Bridge Consultancy | Dubai Market Entry & Corporate Advisory</title>
+<meta name="description" content="Ziya Bridge Consultancy LLC-FZ — a Dubai-based consultancy helping Korean companies enter and grow in the UAE: market entry, company formation and corporate services, management consulting, AI capability training, hospitality and staffing support.">
+<meta property="og:title" content="Ziya Bridge Consultancy">
+<meta property="og:description" content="Your bridge from Korea to Dubai. Market entry, corporate services, management consulting and AI capability training.">
+<meta property="og:url" content="https://www.ziyabridgeconsultancy.com">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/ziya-bridge-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B1B30; --navy-2:#102540; --navy-3:#16304F;
+  --gold:#C9A35A; --gold-l:#E9D29A; --gold-d:#A9843F;
+  --ivory:#F8F4EC; --ivory-2:#EFE8DA; --ink:#1B2433; --muted:#5E6878;
+  --line:rgba(201,163,90,.35);
+  --grad:linear-gradient(120deg,#E9D29A 0%,#C29A4F 50%,#E2C27E 100%);
+  --serif:'Cinzel','Noto Serif KR',serif;
+  --sans:'Montserrat','Noto Sans KR',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--ivory);line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html[lang=ko] body{word-break:keep-all}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* language switching */
+html[lang=ko] [data-en]{display:none!important}
+html[lang=en] [data-ko]{display:none!important}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
+header.scrolled{background:rgba(11,27,48,.96);box-shadow:0 1px 0 var(--line);padding:10px 0;backdrop-filter:blur(6px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand img{height:64px;width:auto}
+header.scrolled .brand img{height:52px}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{color:#E8E2D4;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;position:relative;padding:4px 0}
+html[lang=ko] .menu a{letter-spacing:.04em;font-size:14px;text-transform:none}
+.menu a::after{content:"";position:absolute;left:0;bottom:-2px;height:1px;width:0;background:var(--gold);transition:width .3s}
+.menu a:hover::after{width:100%}
+.lang{display:flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.lang button{background:none;border:0;color:#CFC6B4;font:500 11.5px var(--sans);letter-spacing:.12em;padding:7px 11px;cursor:pointer}
+.lang button.on{background:var(--grad);color:var(--navy)}
+.burger{display:none;background:none;border:0;cursor:pointer;width:34px;height:34px;position:relative}
+.burger span{position:absolute;left:5px;right:5px;height:1px;background:var(--gold-l);transition:.3s}
+.burger span:nth-child(1){top:11px}.burger span:nth-child(2){top:17px}.burger span:nth-child(3){top:23px}
+
+/* hero */
+.hero{min-height:100vh;background:radial-gradient(ellipse 80% 60% at 50% 110%,#1C3A5E 0%,rgba(11,27,48,0) 60%),radial-gradient(ellipse 60% 50% at 85% 10%,rgba(201,163,90,.10),rgba(11,27,48,0) 60%),var(--navy);color:#F3EEE3;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero .arc{position:absolute;left:50%;bottom:-2px;transform:translateX(-50%);width:min(1500px,140vw);opacity:.55;pointer-events:none}
+.hero-inner{position:relative;z-index:2;text-align:center;padding:150px 0 170px;max-width:900px;margin:0 auto}
+.eyebrow{font:500 12px var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+html[lang=ko] .eyebrow{letter-spacing:.2em}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.2vw,62px);line-height:1.22;margin:26px 0 26px;letter-spacing:.02em}
+html[lang=ko] .hero h1{font-family:'Noto Serif KR',serif;font-weight:500;font-size:clamp(30px,4.4vw,52px);line-height:1.38;letter-spacing:-.01em}
+.gold-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(15px,1.5vw,18px);color:#C9C3B6;font-weight:300;max-width:680px;margin:0 auto}
+.cta-row{display:flex;gap:16px;justify-content:center;margin-top:44px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;font:600 12.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;border-radius:1px;transition:.3s;cursor:pointer;border:0}
+html[lang=ko] .btn{letter-spacing:.06em;font-size:14px}
+.btn-gold{background:var(--grad);color:var(--navy)}
+.btn-gold:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn-line{border:1px solid var(--gold);color:var(--gold-l)}
+.btn-line:hover{background:rgba(201,163,90,.1)}
+.hero .cities{margin-top:70px;display:flex;justify-content:center;align-items:center;gap:22px;font:500 11px var(--sans);letter-spacing:.38em;color:#9FA6B3}
+.hero .cities i{display:block;width:70px;height:1px;background:var(--line)}
+
+/* sections */
+section{padding:120px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 70px}
+.sec-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.4vw,42px);line-height:1.3;color:var(--navy);margin-top:18px;letter-spacing:.02em}
+html[lang=ko] .sec-head h2{font-family:'Noto Serif KR',serif;font-weight:500;letter-spacing:-.01em}
+.sec-head p{color:var(--muted);margin-top:18px;font-size:16px}
+.divider{width:60px;height:1px;background:var(--gold);margin:22px auto 0;position:relative}
+.divider::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
+
+/* about */
+.about{background:var(--ivory)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-visual{background:var(--navy);aspect-ratio:1/1;position:relative;display:flex;align-items:center;justify-content:center;padding:50px}
+.about-visual::before{content:"";position:absolute;inset:18px;border:1px solid var(--line)}
+.about-visual img{width:100%}
+.ar{font-family:'Amiri',serif;font-weight:400}
+.about-visual .meaning{position:absolute;bottom:44px;left:0;right:0;text-align:center;color:#CFC6B4;font-size:13px;letter-spacing:.08em}
+.about-visual .meaning b{display:block;font-family:var(--serif);font-weight:400;color:var(--gold-l);font-size:22px;letter-spacing:.12em;margin-bottom:4px}
+.about-text h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3vw,38px);color:var(--navy);line-height:1.3;margin:16px 0 26px}
+html[lang=ko] .about-text h2{font-family:'Noto Serif KR',serif;font-weight:500}
+.about-text p{color:#3D4656;margin-bottom:18px;font-size:16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;border-top:1px solid var(--line)}
+.stats div{padding:24px 10px 0 0}
+.stats b{display:block;font-family:var(--serif);font-weight:500;color:var(--gold-d);font-size:26px}
+.stats span{font-size:13px;color:var(--muted);line-height:1.5;display:block;margin-top:4px}
+
+/* services */
+.services{background:#fff}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--ivory-2);border-left:1px solid var(--ivory-2)}
+.svc{padding:48px 40px 46px;border-right:1px solid var(--ivory-2);border-bottom:1px solid var(--ivory-2);position:relative;transition:background .35s}
+.svc:hover{background:var(--ivory)}
+.svc::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--grad);transition:width .45s}
+.svc:hover::before{width:100%}
+.svc .num{font-family:var(--serif);color:var(--gold);font-size:14px;letter-spacing:.2em}
+.svc svg{width:42px;height:42px;stroke:var(--gold-d);fill:none;stroke-width:1.2;margin:22px 0 22px}
+.svc h3{font-family:var(--serif);font-weight:500;font-size:19px;color:var(--navy);line-height:1.4;letter-spacing:.02em}
+html[lang=ko] .svc h3{font-family:'Noto Serif KR',serif;font-size:20px}
+.svc p{color:var(--muted);font-size:14.5px;margin-top:14px}
+.svc ul{list-style:none;margin-top:18px}
+.svc li{font-size:13.5px;color:#46505F;padding:5px 0 5px 18px;position:relative}
+.svc li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:1px;background:var(--gold)}
+
+/* industries */
+.industries{background:var(--navy);color:#EDE7DA;position:relative;overflow:hidden}
+.industries .sec-head h2{color:#F3EEE3}
+.industries .sec-head p{color:#A9B0BC}
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.ind{background:var(--navy);padding:36px 28px;transition:background .3s}
+.ind:hover{background:var(--navy-2)}
+.ind b{display:block;font-family:var(--serif);font-weight:400;color:var(--gold-l);font-size:17px;letter-spacing:.04em}
+html[lang=ko] .ind b{font-family:'Noto Serif KR',serif;font-weight:500}
+.ind span{display:block;font-size:13.5px;color:#A9B0BC;margin-top:10px;line-height:1.6}
+.ind.feat{background:linear-gradient(160deg,#18365A,#0F2440)}
+.ind.feat em{font-style:normal;display:inline-block;margin-top:14px;font-size:10.5px;letter-spacing:.2em;color:var(--navy);background:var(--grad);padding:3px 9px}
+
+/* process */
+.process{background:var(--ivory)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;position:relative}
+.steps::before{content:"";position:absolute;top:31px;left:12%;right:12%;height:1px;background:var(--line)}
+.step{text-align:center;position:relative}
+.step .dot{width:62px;height:62px;border:1px solid var(--gold);border-radius:50%;margin:0 auto 26px;display:flex;align-items:center;justify-content:center;background:var(--ivory);font-family:var(--serif);color:var(--gold-d);font-size:18px}
+.step h4{font-family:var(--serif);font-weight:500;color:var(--navy);font-size:17px;letter-spacing:.03em}
+html[lang=ko] .step h4{font-family:'Noto Serif KR',serif}
+.step p{font-size:14px;color:var(--muted);margin-top:10px}
+
+/* founder */
+.founder{background:#fff}
+.f-grid{display:grid;grid-template-columns:380px 1fr;gap:80px;align-items:start}
+.f-card{background:var(--navy);color:#EEE8DC;padding:48px 40px;position:relative}
+.f-card::before{content:"";position:absolute;inset:14px;border:1px solid var(--line);pointer-events:none}
+.f-mono{width:110px;height:110px;border-radius:50%;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:34px;letter-spacing:.06em;margin-bottom:30px}
+.f-card h3{font-family:var(--serif);font-weight:400;font-size:26px;letter-spacing:.06em}
+.f-card .role{color:var(--gold);font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
+.f-card dl{margin-top:30px;border-top:1px solid var(--line);padding-top:22px}
+.f-card dt{font-size:10.5px;letter-spacing:.24em;color:#8D95A3;text-transform:uppercase;margin-top:14px}
+.f-card dd{font-size:14.5px;color:#E6DFD0}
+.f-text h2{font-family:var(--serif);font-weight:400;color:var(--navy);font-size:clamp(26px,2.8vw,36px);line-height:1.35;margin:16px 0 26px}
+html[lang=ko] .f-text h2{font-family:'Noto Serif KR',serif;font-weight:500}
+.f-text p{color:#3D4656;font-size:16px;margin-bottom:18px}
+.quote{border-left:2px solid var(--gold);padding:6px 0 6px 26px;margin:34px 0 0;font-family:'Noto Serif KR',serif;font-size:18px;color:var(--navy);line-height:1.7}
+html[lang=en] .quote{font-family:var(--serif);font-size:18px;letter-spacing:.01em}
+.timeline{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.timeline div{border-top:1px solid var(--gold);padding-top:16px}
+.timeline b{display:block;font-size:11px;letter-spacing:.2em;color:var(--gold-d);text-transform:uppercase}
+.timeline span{display:block;color:var(--navy);font-weight:500;margin-top:6px;font-size:15px;line-height:1.5}
+
+/* why */
+.why{background:var(--ivory)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.why-item{background:#fff;padding:38px 40px;display:flex;gap:24px;border:1px solid var(--ivory-2)}
+.why-item .n{font-family:var(--serif);font-size:30px;color:var(--gold);line-height:1;min-width:46px}
+.why-item h4{font-family:var(--serif);font-weight:500;color:var(--navy);font-size:18px}
+html[lang=ko] .why-item h4{font-family:'Noto Serif KR',serif}
+.why-item p{color:var(--muted);font-size:14.5px;margin-top:8px}
+
+/* contact */
+.contact{background:var(--navy);color:#EDE7DA;position:relative;overflow:hidden}
+.contact .sec-head h2{color:#F3EEE3}
+.contact .sec-head p{color:#A9B0BC}
+.c-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:60px}
+.c-info>div{padding:22px 0;border-bottom:1px solid var(--line)}
+.c-info>div:first-child{padding-top:0}
+.c-info small{display:block;font-size:10.5px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase}
+.c-info a,.c-info span{font-size:16px;color:#F0EADF;display:block;margin-top:6px}
+.c-info a:hover{color:var(--gold-l)}
+.c-info .ph{color:#8D95A3;font-style:italic;font-size:14px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+form .full{grid-column:1/-1}
+label{display:block;font-size:10.5px;letter-spacing:.2em;color:#9EA6B3;text-transform:uppercase;margin-bottom:8px}
+html[lang=ko] label{letter-spacing:.05em;font-size:12.5px}
+input,select,textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(201,163,90,.3);color:#F3EEE3;font:400 15px var(--sans);padding:13px 15px;border-radius:1px;outline:none;transition:border .25s}
+select option{color:#111}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+textarea{min-height:130px;resize:vertical}
+.form-note{font-size:12.5px;color:#8D95A3;margin-top:4px}
+
+/* footer */
+footer{background:#081526;color:#8D95A3;padding:60px 0 34px;font-size:13px}
+.f-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;padding-bottom:36px;border-bottom:1px solid rgba(201,163,90,.18)}
+.f-top img{height:62px}
+.f-legal{max-width:520px;line-height:1.8}
+.f-legal b{color:#CFC6B4;font-weight:500}
+.f-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:12px;letter-spacing:.04em}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1020px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .ind-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.f-grid,.c-grid{grid-template-columns:1fr;gap:50px}
+  .about-visual{max-width:460px;width:100%;margin:0 auto}
+  .f-card{max-width:460px}
+}
+@media (max-width:860px){
+  .menu{position:fixed;inset:0 0 0 auto;width:min(320px,85vw);background:var(--navy);flex-direction:column;align-items:flex-start;padding:100px 34px;gap:24px;transform:translateX(100%);transition:transform .4s;box-shadow:-20px 0 40px rgba(0,0,0,.3)}
+  .menu.open{transform:none}
+  .burger{display:block;z-index:60}
+  .burger.x span:nth-child(1){top:17px;transform:rotate(45deg)}
+  .burger.x span:nth-child(2){opacity:0}
+  .burger.x span:nth-child(3){top:17px;transform:rotate(-45deg)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:50px}
+  .steps::before{display:none}
+  .why-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .wrap{padding:0 20px}
+  section{padding:84px 0}
+  .brand img{height:44px}
+  .svc-grid,.ind-grid{grid-template-columns:1fr}
+  .svc{padding:38px 28px}
+  .stats{grid-template-columns:1fr 1fr 1fr}
+  .stats b{font-size:21px}
+  .timeline{grid-template-columns:1fr}
+  form{grid-template-columns:1fr}
+  .why-item{padding:30px 26px;gap:18px}
+  .hero-inner{padding:130px 0 150px}
+  html[lang=ko] .hero h1{font-size:27px}
+  .hero h1{font-size:31px}
+  .hero .cities i{width:36px}
+  .f-card{padding:40px 30px}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Ziya Bridge Consultancy"><img src="assets/ziya-bridge-logo-horizontal.svg" alt="Ziya Bridge Consultancy"></a>
+    <nav class="menu" id="menu">
+      <a href="#about"><span data-ko>회사 소개</span><span data-en>About</span></a>
+      <a href="#services"><span data-ko>서비스</span><span data-en>Services</span></a>
+      <a href="#industries"><span data-ko>산업 분야</span><span data-en>Industries</span></a>
+      <a href="#founder"><span data-ko>대표 소개</span><span data-en>Leadership</span></a>
+      <a href="#contact"><span data-ko>문의하기</span><span data-en>Contact</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set="ko">KOR</button>
+        <button type="button" data-set="en">ENG</button>
+      </div>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <svg class="arc" viewBox="0 0 1500 420" aria-hidden="true">
+    <defs><linearGradient id="hg" x1="0" x2="1"><stop offset="0" stop-color="#C29A4F" stop-opacity="0"/><stop offset=".5" stop-color="#E9D29A"/><stop offset="1" stop-color="#C29A4F" stop-opacity="0"/></linearGradient></defs>
+    <path d="M0 420Q750 60 1500 420" fill="none" stroke="url(#hg)" stroke-width="1.2"/>
+    <path d="M120 420Q750 140 1380 420" fill="none" stroke="url(#hg)" stroke-width=".6" opacity=".5"/>
+    <path d="M750 205C752.5 222 752.5 222 769 224.5C752.5 227 752.5 227 750 244C747.5 227 747.5 227 731 224.5C747.5 222 747.5 222 750 205Z" fill="#E9D29A" transform="translate(0,-38)"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <div class="eyebrow"><span data-ko>Seoul · Dubai — 한국 기업의 UAE 파트너</span><span data-en>Korea · Dubai — Your UAE Partner</span></div>
+    <h1>
+      <span data-ko>한국 기업이 두바이로 향하는 길,<br><span class="gold-text">가장 확실한 다리</span>가 되겠습니다</span>
+      <span data-en>The Bridge Between<br><span class="gold-text">Korean Ambition</span> and Dubai Opportunity</span>
+    </h1>
+    <p class="lead">
+      <span data-ko>시장 진출 전략부터 법인 설립, 운영 컨설팅, AI 역량 교육까지. Ziya Bridge는 두바이 현지에서 한국 기업의 UAE 진출과 성장을 처음부터 끝까지 함께합니다.</span>
+      <span data-en>From market-entry strategy and company formation to management consulting and AI capability training, Ziya Bridge guides Korean companies through every stage of establishing and growing their business in the UAE.</span>
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#contact"><span data-ko>무료 상담 신청</span><span data-en>Book a Consultation</span></a>
+      <a class="btn btn-line" href="#services"><span data-ko>서비스 살펴보기</span><span data-en>Explore Services</span></a>
+    </div>
+    <div class="cities"><span>SEOUL</span><i></i><span>DUBAI</span></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual rv">
+      <img src="assets/ziya-bridge-logo.svg" alt="Ziya Bridge Consultancy logo">
+    </div>
+    <div class="about-text rv">
+      <div class="eyebrow"><span data-ko>회사 소개</span><span data-en>About Us</span></div>
+      <h2>
+        <span data-ko>‘Ziya(<span class="ar">ضياء</span>)’는<br>아랍어로 ‘빛나는 빛’을 뜻합니다</span>
+        <span data-en>“Ziya” (<span class="ar">ضياء</span>) means<br>radiant light</span>
+      </h2>
+      <p>
+        <span data-ko>Ziya Bridge Consultancy는 두바이에 설립된 경영·기업 서비스 컨설팅 회사입니다. 낯선 시장에서 길을 밝히는 빛, 그리고 한국과 UAE를 잇는 다리가 되겠다는 뜻을 이름에 담았습니다.</span>
+        <span data-en>Ziya Bridge Consultancy is a Dubai-based management and corporate services consultancy. Our name reflects our purpose: to light the way through an unfamiliar market, and to be the bridge that connects Korea and the UAE.</span>
+      </p>
+      <p>
+        <span data-ko>UAE는 법인 형태, 프리존과 메인랜드 선택, 비자·노동·세무 규정까지 진출 초기에 판단할 것이 많습니다. 저희는 한국어로 소통하고 현지 기준으로 실행하며, 기업마다 상황에 맞는 가장 현실적인 경로를 설계합니다.</span>
+        <span data-en>Entering the UAE means early decisions on legal structure, free zone versus mainland, visas, labour and tax. We communicate in Korean, execute to local standards, and design the most practical route for each client’s situation.</span>
+      </p>
+      <div class="stats">
+        <div><b>KR · EN</b><span data-ko>한국어·영어 이중 언어 지원</span><span data-en>Bilingual Korean & English service</span></div>
+        <div><b>360°</b><span data-ko>진출 전략부터 현지 운영까지</span><span data-en>From strategy to local operations</span></div>
+        <div><b>UAE</b><span data-ko>두바이 현지 기반 컨설팅</span><span data-en>Dubai-based, on-the-ground advisory</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span data-ko>서비스</span><span data-en>Our Services</span></div>
+      <h2><span data-ko>UAE 진출과 성장을 위한 통합 솔루션</span><span data-en>Integrated Solutions for UAE Entry & Growth</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv">
+        <div class="num">01</div>
+        <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="18"/><path d="M6 24h36M24 6c6 6 6 30 0 36M24 6c-6 6-6 30 0 36"/></svg>
+        <h3><span data-ko>두바이 시장 진출 컨설팅</span><span data-en>Dubai Market-Entry Consulting</span></h3>
+        <p><span data-ko>사업성 검토부터 진출 구조 설계까지, 한국 기업의 UAE 진출 전략을 수립합니다.</span><span data-en>Strategy for Korean companies entering the UAE, from feasibility to entry structure.</span></p>
+        <ul>
+          <li><span data-ko>시장·경쟁 환경 분석 및 사업 타당성 검토</span><span data-en>Market, competitor and feasibility analysis</span></li>
+          <li><span data-ko>프리존·메인랜드 비교 및 최적 구조 제안</span><span data-en>Free zone vs mainland structuring</span></li>
+          <li><span data-ko>현지 파트너·유통사 탐색 및 미팅 지원</span><span data-en>Local partner and distributor search</span></li>
+        </ul>
+      </div>
+      <div class="svc rv">
+        <div class="num">02</div>
+        <svg viewBox="0 0 48 48"><path d="M8 42V14l16-8 16 8v28"/><path d="M4 42h40M16 42V28h16v14M16 18h2M30 18h2M23 18h2"/></svg>
+        <h3><span data-ko>법인 설립 및 기업 서비스</span><span data-en>Company Formation & Corporate Services</span></h3>
+        <p><span data-ko>법인 설립부터 설립 후 행정까지 기업 운영에 필요한 실무를 대행·지원합니다.</span><span data-en>End-to-end support from incorporation through ongoing corporate administration.</span></p>
+        <ul>
+          <li><span data-ko>법인 설립 및 라이선스 신청 지원</span><span data-en>Incorporation and licence applications</span></li>
+          <li><span data-ko>비자·Emirates ID·은행 계좌 개설 지원</span><span data-en>Visa, Emirates ID and bank account support</span></li>
+          <li><span data-ko>라이선스 갱신 및 법인 행정 관리</span><span data-en>Licence renewals and corporate upkeep</span></li>
+        </ul>
+      </div>
+      <div class="svc rv">
+        <div class="num">03</div>
+        <svg viewBox="0 0 48 48"><path d="M6 40h36M10 40V28M20 40V20M30 40V24M40 40V12"/><path d="M8 22l10-8 10 6 14-12"/></svg>
+        <h3><span data-ko>경영 컨설팅</span><span data-en>Management Consultancy</span></h3>
+        <p><span data-ko>진출 이후 현지 운영이 안정적으로 자리 잡도록 경영 전반을 자문합니다.</span><span data-en>Advisory that helps your UAE operation run and scale with confidence.</span></p>
+        <ul>
+          <li><span data-ko>현지 사업 계획 및 운영 체계 수립</span><span data-en>Local business planning and operating models</span></li>
+          <li><span data-ko>UAE 노동·세무·규제 환경 대응 자문</span><span data-en>Guidance on UAE labour, tax and regulation</span></li>
+          <li><span data-ko>제약·바이오·헬스케어 분야 전문 자문</span><span data-en>Specialist pharma, biotech and healthcare advisory</span></li>
+        </ul>
+      </div>
+      <div class="svc rv">
+        <div class="num">04</div>
+        <svg viewBox="0 0 48 48"><rect x="10" y="10" width="28" height="28" rx="2"/><rect x="18" y="18" width="12" height="12"/><path d="M18 4v6M30 4v6M18 38v6M30 38v6M4 18h6M4 30h6M38 18h6M38 30h6"/></svg>
+        <h3><span data-ko>AI 역량 강화 교육</span><span data-en>AI Capability Programmes</span></h3>
+        <p><span data-ko>임직원이 실무에서 바로 AI를 활용하도록 직무별 맞춤 프로그램을 설계·운영합니다.</span><span data-en>Role-specific programmes that help your team put AI to work in daily operations.</span></p>
+        <ul>
+          <li><span data-ko>HR·회계·마케팅 등 직무별 트랙 설계</span><span data-en>Tracks for HR, finance, marketing and more</span></li>
+          <li><span data-ko>UAE 현지 법규·업무 환경 반영 실습 과제</span><span data-en>Assignments adapted to UAE rules and practice</span></li>
+          <li><span data-ko>경영진 대상 AI 전략 프로그램</span><span data-en>Executive AI strategy packages</span></li>
+        </ul>
+      </div>
+      <div class="svc rv">
+        <div class="num">05</div>
+        <svg viewBox="0 0 48 48"><path d="M8 34h32M6 38h36"/><path d="M10 34a14 14 0 0 1 28 0"/><path d="M24 20v-4M21 16h6"/></svg>
+        <h3><span data-ko>호스피탈리티 서비스</span><span data-en>Hospitality Services</span></h3>
+        <p><span data-ko>출장·시장조사·전시회 방문 등 두바이 일정 전반을 품격 있게 준비합니다.</span><span data-en>Seamless arrangements for business visits, market tours and exhibitions in Dubai.</span></p>
+        <ul>
+          <li><span data-ko>비즈니스 방문 일정 및 의전 지원</span><span data-en>Business itineraries and delegation support</span></li>
+          <li><span data-ko>전시회·박람회 참가 및 현장 지원</span><span data-en>Trade show and exhibition support</span></li>
+          <li><span data-ko>현지 정착 및 생활 안내</span><span data-en>Relocation and settling-in guidance</span></li>
+        </ul>
+      </div>
+      <div class="svc rv">
+        <div class="num">06</div>
+        <svg viewBox="0 0 48 48"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M5 40c0-7 5-12 12-12s12 5 12 12M27 40c0-6 3-10 7-10s9 4 9 10"/></svg>
+        <h3><span data-ko>인력 및 스태핑 지원</span><span data-en>Staffing & HR Support</span></h3>
+        <p><span data-ko>현지 법인 운영에 필요한 인력 확보와 HR 체계 구축을 지원합니다.</span><span data-en>Helping you find the right people and set up HR for your UAE entity.</span></p>
+        <ul>
+          <li><span data-ko>단기·프로젝트 인력 공급 지원</span><span data-en>Temporary and project-based staffing</span></li>
+          <li><span data-ko>채용 전략 및 HR 정책 수립 자문</span><span data-en>Hiring strategy and HR policy advisory</span></li>
+          <li><span data-ko>현지 노동법 기반 인사 운영 가이드</span><span data-en>HR operations aligned with UAE Labour Law</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="industries" id="industries">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span data-ko>산업 분야</span><span data-en>Industries</span></div>
+      <h2><span data-ko>다양한 산업의 한국 기업과 함께합니다</span><span data-en>Supporting Korean Companies Across Sectors</span></h2>
+      <p><span data-ko>업종별 규제와 시장 특성을 이해하고, 각 분야에 맞는 진출 전략을 제시합니다.</span><span data-en>We understand sector-specific regulation and market dynamics, and tailor every entry strategy accordingly.</span></p>
+      <div class="divider"></div>
+    </div>
+    <div class="ind-grid rv">
+      <div class="ind feat"><b><span data-ko>제약·바이오</span><span data-en>Pharma & Biotech</span></b><span data-ko>의약품·바이오 기업의 시장 분석과 진출 전략</span><span data-en>Market analysis and entry strategy for life-science companies</span><em><span data-ko>전문 분야</span><span data-en>SPECIALTY</span></em></div>
+      <div class="ind"><b><span data-ko>헬스케어·의료</span><span data-en>Healthcare & Medical</span></b><span data-ko>의료기기, 디지털 헬스, 의료 서비스</span><span data-en>Medical devices, digital health and care services</span></div>
+      <div class="ind"><b><span data-ko>뷰티·화장품</span><span data-en>Beauty & Cosmetics</span></b><span data-ko>K-뷰티 브랜드의 중동 시장 확장</span><span data-en>Expanding K-beauty brands into the Middle East</span></div>
+      <div class="ind"><b><span data-ko>IT·AI·테크</span><span data-en>IT, AI & Tech</span></b><span data-ko>소프트웨어, 플랫폼, AI 솔루션 기업</span><span data-en>Software, platforms and AI solution providers</span></div>
+      <div class="ind"><b><span data-ko>식품·F&B</span><span data-en>Food & Beverage</span></b><span data-ko>K-푸드, 외식 프랜차이즈, 유통</span><span data-en>K-food, restaurant franchises and distribution</span></div>
+      <div class="ind"><b><span data-ko>제조·무역</span><span data-en>Manufacturing & Trade</span></b><span data-ko>제조 기업의 지사·판매 거점 설립</span><span data-en>Regional branches and sales hubs for manufacturers</span></div>
+      <div class="ind"><b><span data-ko>교육·콘텐츠</span><span data-en>Education & Content</span></b><span data-ko>에듀테크, K-콘텐츠, 문화 비즈니스</span><span data-en>Edtech, K-content and cultural business</span></div>
+      <div class="ind"><b><span data-ko>서비스·스타트업</span><span data-en>Services & Startups</span></b><span data-ko>전문 서비스 및 성장 단계 스타트업</span><span data-en>Professional services and growth-stage startups</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span data-ko>진행 절차</span><span data-en>How We Work</span></div>
+      <h2><span data-ko>체계적인 4단계 진출 프로세스</span><span data-en>A Clear, Four-Stage Process</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="dot">I</div><h4><span data-ko>상담·진단</span><span data-en>Discover</span></h4><p><span data-ko>사업 목표와 현재 상황을 파악하고 진출 가능성을 진단합니다.</span><span data-en>We learn your goals and assess your readiness for the UAE.</span></p></div>
+      <div class="step rv"><div class="dot">II</div><h4><span data-ko>전략 설계</span><span data-en>Design</span></h4><p><span data-ko>시장 분석을 바탕으로 법인 구조와 실행 로드맵을 제안합니다.</span><span data-en>We propose the right structure and an actionable roadmap.</span></p></div>
+      <div class="step rv"><div class="dot">III</div><h4><span data-ko>설립·실행</span><span data-en>Establish</span></h4><p><span data-ko>법인 설립, 비자, 계좌, 사무 공간 등 실무를 함께 진행합니다.</span><span data-en>We handle incorporation, visas, banking and set-up.</span></p></div>
+      <div class="step rv"><div class="dot">IV</div><h4><span data-ko>성장·운영</span><span data-en>Grow</span></h4><p><span data-ko>현지 운영, 인력, 교육까지 지속적으로 성장을 지원합니다.</span><span data-en>We support operations, people and capability as you grow.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder" id="founder">
+  <div class="wrap f-grid">
+    <div class="f-card rv">
+      <div class="f-mono gold-text">JK</div>
+      <h3>Jihyeon Kim, Ph.D.</h3>
+      <div class="role">CEO &amp; General Manager</div>
+      <dl>
+        <dt><span data-ko>학력</span><span data-en>Education</span></dt>
+        <dd><span data-ko>생물정보학 박사 (Ph.D.)</span><span data-en>Ph.D., Bioinformatics</span></dd>
+        <dd><span data-ko>생명과학 학사 (B.Sc.)</span><span data-en>B.Sc., Life Sciences</span></dd>
+        <dt><span data-ko>경력</span><span data-en>Experience</span></dt>
+        <dd><span data-ko>제약·바이오 컨설턴트 (2025–2026)</span><span data-en>Pharma & Biotech Consultant (2025–2026)</span></dd>
+        <dt><span data-ko>언어</span><span data-en>Languages</span></dt>
+        <dd><span data-ko>한국어 · 영어</span><span data-en>Korean · English</span></dd>
+      </dl>
+    </div>
+    <div class="f-text rv">
+      <div class="eyebrow"><span data-ko>대표 소개</span><span data-en>Leadership</span></div>
+      <h2><span data-ko>과학적 분석력과 현장 경험으로<br>근거 있는 전략을 제시합니다</span><span data-en>Scientific Rigour,<br>Practical Strategy</span></h2>
+      <p><span data-ko>김지현 대표는 생명과학을 전공하고 생물정보학 박사 학위를 취득했습니다. 대규모 데이터를 분석해 의미 있는 결론을 도출하는 연구 훈련을 바탕으로, 2025년부터 2026년까지 제약·바이오 분야 컨설턴트로 활동하며 산업 분석과 사업 전략 수립을 수행했습니다.</span><span data-en>Jihyeon Kim holds a B.Sc. in Life Sciences and a Ph.D. in Bioinformatics. Trained to turn complex data into clear, evidence-based conclusions, she worked as a pharmaceutical and biotech consultant from 2025 to 2026, delivering industry analysis and business strategy.</span></p>
+      <p><span data-ko>현재 두바이에서 Ziya Bridge Consultancy를 이끌며, 데이터에 기반한 분석과 현지 실행력을 결합해 한국 기업의 UAE 진출을 돕고 있습니다. 또한 AI·데이터 분야의 전문성을 살려 기업 임직원을 위한 AI 역량 강화 프로그램을 설계·운영하고 있습니다.</span><span data-en>Based in Dubai, she now leads Ziya Bridge Consultancy, combining data-driven analysis with on-the-ground execution to help Korean companies succeed in the UAE. Drawing on her AI and data expertise, she also designs and delivers AI capability programmes for corporate teams.</span></p>
+      <div class="timeline">
+        <div><b>B.Sc.</b><span data-ko>생명과학 전공</span><span data-en>Life Sciences</span></div>
+        <div><b>Ph.D.</b><span data-ko>생물정보학 박사</span><span data-en>Bioinformatics</span></div>
+        <div><b>2025 – 2026</b><span data-ko>제약·바이오 컨설턴트</span><span data-en>Pharma & Biotech Consultant</span></div>
+      </div>
+      <div class="quote">
+        <span data-ko>“한국 기업이 두바이에서 처음 내딛는 한 걸음이 확신이 될 수 있도록, 가장 가까운 곳에서 길을 밝히겠습니다.”</span>
+        <span data-en>“We light the way so that every Korean company’s first step in Dubai is taken with confidence.”</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span data-ko>왜 Ziya Bridge인가</span><span data-en>Why Ziya Bridge</span></div>
+      <h2><span data-ko>한국 기업을 가장 잘 이해하는 두바이 파트너</span><span data-en>The Dubai Partner Who Understands Korean Business</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-item rv"><div class="n">01</div><div><h4><span data-ko>한국어 원스톱 소통</span><span data-en>Seamless Korean Communication</span></h4><p><span data-ko>모든 과정을 한국어로 소통하고, 주요 문서는 한국어·영어로 함께 제공합니다.</span><span data-en>We work with you in Korean throughout, and deliver key documents in both Korean and English.</span></p></div></div>
+      <div class="why-item rv"><div class="n">02</div><div><h4><span data-ko>현지 기반 실행력</span><span data-en>On-the-Ground Execution</span></h4><p><span data-ko>두바이에 설립된 법인으로서 현지 규정과 실무 절차에 맞춰 직접 실행합니다.</span><span data-en>As a Dubai-registered company, we execute directly according to local rules and procedures.</span></p></div></div>
+      <div class="why-item rv"><div class="n">03</div><div><h4><span data-ko>데이터 기반 전략</span><span data-en>Data-Driven Strategy</span></h4><p><span data-ko>과학 연구와 산업 컨설팅 경험을 바탕으로 근거 있는 의사결정을 돕습니다.</span><span data-en>Research and consulting experience behind every recommendation we make.</span></p></div></div>
+      <div class="why-item rv"><div class="n">04</div><div><h4><span data-ko>진출 이후까지 함께</span><span data-en>Beyond Day One</span></h4><p><span data-ko>설립에서 끝나지 않고 운영, 인력, AI 교육까지 성장 단계마다 함께합니다.</span><span data-en>We stay with you after set-up, supporting operations, people and AI capability as you grow.</span></p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow"><span data-ko>문의하기</span><span data-en>Contact</span></div>
+      <h2><span data-ko>두바이 진출, 지금 상담하세요</span><span data-en>Let’s Talk About Your Move to Dubai</span></h2>
+      <p><span data-ko>문의를 남겨주시면 영업일 기준 1–2일 내에 연락드리겠습니다.</span><span data-en>Send us a message and we will reply within one to two business days.</span></p>
+      <div class="divider"></div>
+    </div>
+    <div class="c-grid">
+      <div class="c-info rv">
+        <div><small><span data-ko>이메일</span><span data-en>Email</span></small><a href="mailto:info@ziyabridgeconsultancy.com">info@ziyabridgeconsultancy.com</a></div>
+        <div><small><span data-ko>전화 · WhatsApp</span><span data-en>Phone · WhatsApp</span></small><a href="tel:+971509180520">+971 50 918 0520</a></div>
+        <div><small><span data-ko>주소</span><span data-en>Office</span></small><span class="ph">[Office address], [Free Zone], Dubai, United Arab Emirates</span></div>
+        <div><small><span data-ko>업무 시간</span><span data-en>Business Hours</span></small><span data-ko>월–금 09:00–18:00 (UAE 시간)</span><span data-en>Mon–Fri 09:00–18:00 (GST)</span></div>
+        <div style="border:0"><a class="btn btn-line" style="margin-top:8px;display:inline-flex" href="https://wa.me/971509180520" target="_blank" rel="noopener"><span data-ko>WhatsApp으로 문의</span><span data-en>Chat on WhatsApp</span></a></div>
+      </div>
+      <form class="rv" id="cform">
+        <div><label><span data-ko>성함</span><span data-en>Name</span></label><input name="name" required></div>
+        <div><label><span data-ko>회사명</span><span data-en>Company</span></label><input name="company"></div>
+        <div><label><span data-ko>이메일</span><span data-en>Email</span></label><input type="email" name="email" required></div>
+        <div><label><span data-ko>연락처</span><span data-en>Phone</span></label><input name="phone"></div>
+        <div class="full"><label><span data-ko>관심 서비스</span><span data-en>Service of Interest</span></label>
+          <select name="service">
+            <option data-k="두바이 시장 진출 컨설팅" data-e="Market-Entry Consulting">두바이 시장 진출 컨설팅</option>
+            <option data-k="법인 설립 및 기업 서비스" data-e="Company Formation &amp; Corporate Services">법인 설립 및 기업 서비스</option>
+            <option data-k="경영 컨설팅" data-e="Management Consultancy">경영 컨설팅</option>
+            <option data-k="AI 역량 강화 교육" data-e="AI Capability Programmes">AI 역량 강화 교육</option>
+            <option data-k="호스피탈리티 서비스" data-e="Hospitality Services">호스피탈리티 서비스</option>
+            <option data-k="인력 및 스태핑 지원" data-e="Staffing &amp; HR Support">인력 및 스태핑 지원</option>
+            <option data-k="기타" data-e="Other">기타</option>
+          </select></div>
+        <div class="full"><label><span data-ko>문의 내용</span><span data-en>Message</span></label><textarea name="message" required></textarea></div>
+        <div class="full"><button class="btn btn-gold" type="submit"><span data-ko>문의 보내기</span><span data-en>Send Enquiry</span></button>
+          <p class="form-note"><span data-ko>보내기를 누르면 이메일 앱이 열리며 작성하신 내용이 자동으로 입력됩니다.</span><span data-en>Clicking send opens your email app with your message ready to go.</span></p></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <img src="assets/ziya-bridge-logo-horizontal.svg" alt="Ziya Bridge Consultancy">
+      <div class="f-legal">
+        <b>Ziya Bridge Consultancy LLC-FZ</b><br>
+        <span data-ko>두바이 프리존 법인 · 라이선스 번호 [License No.]</span><span data-en>Dubai Free Zone Company · Licence No. [License No.]</span><br>
+        <span data-ko>인가 업무: 기업 서비스 제공(7010.93), 경영 컨설팅(7020), 호스피탈리티 서비스(9000.17), 임시 인력 공급(7820.01)</span>
+        <span data-en>Licensed activities: Corporate Services Provider (7010.93), Management Consultancy (7020), Hospitality Services (9000.17), Temporary Staffing Supply (7820.01)</span>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> Ziya Bridge Consultancy LLC-FZ. All rights reserved.</span>
+      <span>www.ziyabridgeconsultancy.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){
+    root.lang=l;
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.set===l)});
+    document.querySelectorAll('option[data-k]').forEach(function(o){o.textContent=l==='ko'?o.dataset.k:o.dataset.e});
+    try{localStorage.setItem('zb-lang',l)}catch(e){}
+  }
+  var saved=null; try{saved=localStorage.getItem('zb-lang')}catch(e){}
+  var q=new URLSearchParams(location.search).get('lang');
+  setLang(q==='en'||q==='ko'?q:(saved||((navigator.language||'').toLowerCase().indexOf('ko')===0?'ko':'en')));
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+
+  var header=document.getElementById('top');
+  function onScroll(){header.classList.toggle('scrolled',window.scrollY>40)}
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){menu.classList.toggle('open');burger.classList.toggle('x')});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');burger.classList.remove('x')})});
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  } else document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  document.getElementById('cform').addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var f=ev.target, d=function(n){return (f.elements[n].value||'').trim()};
+    var body='Name: '+d('name')+'\nCompany: '+d('company')+'\nEmail: '+d('email')+'\nPhone: '+d('phone')+'\nService: '+d('service')+'\n\n'+d('message');
+    location.href='mailto:info@ziyabridgeconsultancy.com?subject='+encodeURIComponent('[Website Enquiry] '+(d('company')||d('name')))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
