@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -548,12 +548,11 @@ footer{background:#081526;color:#8D95A3;padding:60px 0 34px;font-size:13px}
     root.lang=l;
     document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.set===l)});
     document.querySelectorAll('option[data-k]').forEach(function(o){o.textContent=l==='ko'?o.dataset.k:o.dataset.e});
-    try{localStorage.setItem('zb-lang',l)}catch(e){}
   }
-  var saved=null; try{saved=localStorage.getItem('zb-lang')}catch(e){}
+  var saved=null; try{saved=localStorage.getItem('zb-lang-choice')}catch(e){}
   var q=new URLSearchParams(location.search).get('lang');
-  setLang(q==='en'||q==='ko'?q:(saved||((navigator.language||'').toLowerCase().indexOf('ko')===0?'ko':'en')));
-  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+  setLang(q==='en'||q==='ko'?q:(saved==='ko'?'ko':'en'));
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);try{localStorage.setItem('zb-lang-choice',b.dataset.set)}catch(e){}})});
 
   var header=document.getElementById('top');
   function onScroll(){header.classList.toggle('scrolled',window.scrollY>40)}
